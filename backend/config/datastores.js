@@ -35,7 +35,7 @@ module.exports.datastores = {
   default: {
 
     adapter:'sails-mongo',
-    url:process.env.MONGO_URL || 'mongodb://localhost:27017/test_sail_mongo_bootstrap',
+    url:process.env.MONGO_URL,
 
     /***************************************************************************
     *                                                                          *
