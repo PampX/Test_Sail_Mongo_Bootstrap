@@ -13,7 +13,6 @@
  * https://sailsjs.com/config/security
  */
 
-module.exports.security = {
 
   /***************************************************************************
   *                                                                          *
@@ -28,11 +27,15 @@ module.exports.security = {
   *                                                                          *
   ***************************************************************************/
 
+module.exports.security = {
   cors: {
-    allRoutes: false,
-    allowOrigins: '*',
-    allowCredentials: false,
+    allRoutes: true,
+    allowOrigins: '*',           // on autorise tout (ok pour dev)
+    allowCredentials: false,     // pas besoin de cookies
+    allowRequestHeaders: 'content-type, authorization',
+    allowRequestMethods: 'GET, POST, PATCH, PUT, DELETE, OPTIONS, HEAD'
   },
+};
 
 
   /****************************************************************************
@@ -51,4 +54,3 @@ module.exports.security = {
 
   // csrf: false
 
-};
