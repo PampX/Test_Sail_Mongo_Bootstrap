@@ -9,6 +9,10 @@
  */
 
 module.exports.routes = {
-
-
+    'POST /todo': 'TodoController.create',
+    'GET /todo': 'TodoController.find',
+    'GET /todo/:id': 'TodoController.findOne',
+    'PATCH /todo/:id': 'TodoController.update',
+    'DELETE /todo/:id': 'TodoController.destroy',
+    'PATCH /todo/:id/toggle': 'TodoController.toggle',
 };
