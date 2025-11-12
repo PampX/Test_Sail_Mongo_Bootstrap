@@ -15,11 +15,3 @@ L’objectif : comprendre le cycle complet (CRUD, appels API, CORS, stockage per
 | **Communication** | Fetch API + JSON | Front ↔ Back en REST |
 | **Autres** | dayjs, dotenv | Formatage des dates et configuration d’environnement |
 
----
-
-## ⚙️ Installation & lancement
-
-### 1️⃣ Backend (API Sails)
-```bash
-cd backend
-npm install
