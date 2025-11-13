@@ -39,7 +39,7 @@ export default function App() {
 
   return (
     <Container className="py-4">
-      <h2 className="mb-4">📝 Primal ToDo</h2>
+      <h2 className="mb-4">📝 ToDo</h2>
 
       <Card className="mb-4">
         <Card.Body>
